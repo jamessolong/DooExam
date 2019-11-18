@@ -13,12 +13,12 @@ import android.database.Cursor
 
 class DbManager {
 
+    var dbVersion = 1
     var dbName = "MyNotes"
     var dbTable = "Notes"
     var colID = "ID"
     var colTitle = "Title"
     var colDes = "Description"
-    var dbVersion = 1
     val sqlCreateTable = "CREATE TABLE IF NOT EXISTS " + dbTable + " (" + colID + " INTEGER PRIMARY KEY," + colTitle + " TEXT, " + colDes + " TEXT);"
     var sqlDB: SQLiteDatabase? = null
 
