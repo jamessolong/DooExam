@@ -162,13 +162,13 @@ class MainActivity : AppCompatActivity() {
               /////////////////////////////////////////////////////////get description
                 val desc = myView.descTV.text.toString()
                ///////////////////////////////////////////////////// //concatenate
-                val s = subject + "\n" + desc
+                val X = subject + "\n" + desc
                 ///////////////////////////////////////////////////////share intent
                 val shareIntent = Intent()
                 shareIntent.action = Intent.ACTION_SEND
                 shareIntent.type = "text/plain"
-                shareIntent.putExtra(Intent.EXTRA_TEXT, s)
-                startActivity(Intent.createChooser(shareIntent, s))
+                shareIntent.putExtra(Intent.EXTRA_TEXT, X)
+                startActivity(Intent.createChooser(shareIntent, X))
             }
 
             return myView
