@@ -1,19 +1,19 @@
 package com.example.user.dooexam
 
 
-import android.app.AlertDialog
-import android.app.SearchManager
-import android.content.Context
-import android.content.Intent
-import android.support.v7.app.AppCompatActivity
-import android.os.Bundle
-import android.support.v7.widget.SearchView
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.Toast
+import android.app.SearchManager
+import android.content.Context
+import android.content.Intent
+import android.support.v7.app.AppCompatActivity
+import android.os.Bundle
+import android.app.AlertDialog
+import android.support.v7.widget.SearchView
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.row.view.*
 
@@ -69,7 +69,7 @@ class MainActivity : AppCompatActivity() {
         val mActionBar = supportActionBar
         if (mActionBar != null) {
 
-            if(total == 1 || total == 0){
+            if(total == 0 || total == 1){
                 mActionBar.subtitle = "You have $total Exam"
             }
             else{
@@ -125,6 +125,7 @@ class MainActivity : AppCompatActivity() {
 
 
     inner class MyExamAdapter : BaseAdapter {
+
         var listExamAdapter = ArrayList<Exam>()
         var context: Context? = null
 
@@ -135,7 +136,7 @@ class MainActivity : AppCompatActivity() {
 
 
         override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
-            /////////////////////////////////////////////////////////////////inflate layout row.xml
+            /////////////////////////////////////////////////////////////////inflate row.xml
             var myView = layoutInflater.inflate(R.layout.row, null)
             val myExam = listExamAdapter[position]
             //////////-----//////////
@@ -154,15 +155,15 @@ class MainActivity : AppCompatActivity() {
                 GoToUpdateFun(myExam)
             }
 
-            //share btn click
+            ///////////////////////////////////////////////////////////////////share btn click
             myView.shareBtn.setOnClickListener {
-                //get title
+                ///////////////////////////////////////////////////////get subject
                 val subject = myView.subjextTV.text.toString()
-                //get description
+              /////////////////////////////////////////////////////////get description
                 val desc = myView.descTV.text.toString()
-                //concatenate
+               ///////////////////////////////////////////////////// //concatenate
                 val s = subject + "\n" + desc
-                //share intent
+                ///////////////////////////////////////////////////////share intent
                 val shareIntent = Intent()
                 shareIntent.action = Intent.ACTION_SEND
                 shareIntent.type = "text/plain"
@@ -187,14 +188,14 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////update
 
     private fun GoToUpdateFun(myNote: Exam) {
         var intent = Intent(this, AddExamActivity::class.java)
         intent.putExtra("ID", myNote.subID)
         intent.putExtra("name", myNote.subName)
         intent.putExtra("des", myNote.subDes)
-        startActivity(intent) //start activity
+        startActivity(intent)
     }
 
 

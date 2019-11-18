@@ -1,8 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/TITLE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="476dp"
+        android:layout_marginEnd="307dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="307dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="16dp"
+        android:text="DooExam"
+        android:textColor="#030900"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/EXPLAIN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="307dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="307dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="80dp"
+        android:text="แอพพลิเคชั่นนี้จัดทำขึ้นเพื่อใช้สำหรับการดูบันทึกตารางสอบ"
+        android:textColor="#030900"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.026"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="307dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="307dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="128dp"
+        android:text="วิธีการใช้งาน"
+        android:textColor="#030900"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="115dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="115dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="168dp"
+        android:text="1.ที่หน้าแรก กดปุ่ม + บนแถบเมนูด้านบน"
+        android:textColor="#030900"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="115dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="115dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="204dp"
+        android:text="2.ป้อนวิชาที่สอบ วันเวลาและห้องสอบ แล้วกดปุ่ม ADD"
+        android:textColor="#030900"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
 
 </android.support.constraint.ConstraintLayout>

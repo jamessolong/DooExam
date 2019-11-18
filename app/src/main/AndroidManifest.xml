@@ -22,7 +22,7 @@
             android:parentActivityName=".MainActivity"></activity>
 
         <activity android:name=".AboutActivity"
-            android:label="Add Exam"
+            android:label="About"
             android:parentActivityName=".MainActivity"></activity>
 
 

@@ -15,6 +15,6 @@
     <item
         android:id="@+id/addExam"
         android:icon="@drawable/ic_action_add"
-        android:title="Add Exam"
+        android:title="@string/addBtn"
         app:showAsAction="always" />
 </menu>

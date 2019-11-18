@@ -2,5 +2,8 @@
     <string name="app_name">Doo Exam</string>
     <string name="about_txt">about</string>
     <string name="search_txt">Search</string>
+    <string name="addBtn">ADD</string>
+    <string name="subject_txt">Subject</string>
+    <string name="desc_txt">Date / Room</string>
 
 </resources>
